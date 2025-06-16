@@ -1,3 +1,24 @@
+# Browser-Based System Tests with Selenium
+
+## Overview
+
+This demo introduces Selenium as a tool for running automated browser-based tests.
+
+### Learning Objectives
+- Write and execute browser-based tests using Selenium
+- Simulate user actions to test functionality
+- Verify the complete end-to-end behavior of the application
+
+### Prior Knowledge
+- System Testing and Browser-Based Testing
+- Basic front-end skills (esp. HTML locators)
+
+### Time Estimate: 20 minutes
+
+
+## Prerequisites
+You should have MongoDB installed and running
+
 
 ## How to run
 
@@ -30,7 +51,7 @@ python frontend.py
 
 Go to your browser.
 
-If you go to [http://127.:0.0.1:8000](http://127.:0.0.1:8000), you should see the front end of your app. The landing page is a page that lists the current available pages (Add student, List students, Delete students)
+If you go to [http://127.0.0.1:8000](http://127.0.0.1:8000), you should see the front end of your app. The landing page is a page that lists the current available pages (Add student, List students, Delete student)
 
 Click on the different links, and explore the pages.
 
@@ -43,7 +64,7 @@ Check the two test cases in `tests/browser/test_student_forms.py`. Try to unders
 Now run the current tests and make sure they pass (You must make sure you have your front end and backend running as above. The commands you type here are in a **third** terminal)
 
 ```
-source .venb/bin/activate
+source .venv/bin/activate
 pytest
 ```
 
@@ -52,4 +73,5 @@ pytest
 Add two tests for the delete student page:
 
 Test 1: makes sure that the homepage has the delete student link and goes to the right page
+
 Test 2: makes sure delete student works as expected (hint: you may need to first add a student so you are sure the email you will delete exists)
